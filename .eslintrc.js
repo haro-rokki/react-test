@@ -102,6 +102,11 @@ module.exports = {
         explicitSpread: 'ignore',
       },
     ],
+    "import/prefer-default-export": "off",
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: ['**/*.test.ts', '**/*.test.tsx'],
+      peerDependencies: false
+    }]
   },
   overrides: [
     {
